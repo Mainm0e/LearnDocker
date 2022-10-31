@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/docs/static/nicestyle.css" rel="stylesheet">
+    <title>Ascii Art</title>
+</head>
+<body>
+    <div class="main">
+        <div class="emptyDiv"></div>
+        <div class="topDiv">
+            <pre class='Output' READONLY>{{.Output}} </pre>
+        </div>
+        <div class="bottomDiv">
+            <form action="/ascii-art"  method="POST">
+                <div class="inputT">
+                    <textarea name="input" type="text" id="inputText" class="styleInput" placeholder="Type Something" maxlength="99" ></textarea>
+                    <div class="Options">
+                        <select name="font" id="Font" class="sFont">
+                            <option class="option" value="standard.txt">Standard</option>
+                            <option class="option" value="shadow.txt">Shadow</option>
+                            <option class="option" value="thinkertoy.txt">Thinkertoy</option>
+                        </select>
+                        <!-- !!this comment it for download function later project.!!
+                            <input type="checkbox" class="function" name="download">download</input>
+                            <select name="File" id="File" class="sFile">
+                                <option name="selectFile" value="asciiart.txt">.txt</option>
+                                <option name="selectFile" value="asciiart.pdf">.pdf</option>
+                            </select>
+                        -->
+                        
+                    </div>
+                    <button name="convert"id="ConvertAscii">Convert</button>
+                </div>
+            </form>
+        </div>
+    </div>
+            
+  <div class='light x1'></div>
+  <div class='light x2'></div>
+  <div class='light x3'></div>
+  <div class='light x4'></div>
+  <div class='light x5'></div>
+  <div class='light x6'></div>
+  <div class='light x7'></div>
+  <div class='light x8'></div>
+  <div class='light x9'></div>
+</body>
+</html>
