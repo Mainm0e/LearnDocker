@@ -1,7 +1,7 @@
 package serverhandler
 
 import (
-	"fmt"
+	//"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -60,7 +60,7 @@ func ServerHandler(w http.ResponseWriter, r *http.Request) {
 			}
 		}
 
-		fmt.Println(out)
+		//fmt.Println(out)
 		d.Output = out
 		temp.ExecuteTemplate(w, "index.html", d)
 	} else {
@@ -112,7 +112,7 @@ func HomeHandler(w http.ResponseWriter, r *http.Request) {
 			}
 		}
 
-		fmt.Println(out)
+		//fmt.Println(out)
 		d.Output = out
 		temp.ExecuteTemplate(w, "index.html", d)
 	} else {
@@ -145,7 +145,7 @@ func TextNewLine(b []byte) string {
 	var newString string
 	for i := 0; i < len(b); i++ {
 		if b[i] == 13 && b[i+1] == 10 {
-			fmt.Println(b[i], b[i+1])
+			//fmt.Println(b[i], b[i+1])
 			newString = newString + "\\n"
 			i++
 		} else {

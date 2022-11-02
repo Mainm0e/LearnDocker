@@ -216,13 +216,11 @@ button:focus{
     display: none;
   }
 }
-  .topDiv{
-   height: 300px;
-  }
+  
   
 
   .Output{
-    
+    background-color: rgba(0, 126, 155, 0.129);
     text-align: center;
     height: 450px;
     width: 100%;
